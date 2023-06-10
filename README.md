@@ -1,3 +1,3 @@
-# unsupervised-concept-discovery
+# decomp-diffusion-web
 
-Webpage: https://energy-based-model.github.io/unsupervised-concept-discovery/
+Webpage: https://jsu27.github.io/decomp-diffusion-web/
