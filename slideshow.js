@@ -20,9 +20,9 @@ function showSlides(n) {
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    curVideo = slides[i].getElementsByTagName('video')[0];
-    curVideo.currentTime = 0;
-    curVideo.pause();
+    // curVideo = slides[i].getElementsByTagName('video')[0];
+    // curVideo.currentTime = 0;
+    // curVideo.pause();
     // slides[i].getElementsByTagName('video')[0].currentTime = 0; // reset all videos
   }
   for (i = 0; i < dots.length; i++) {
@@ -32,7 +32,7 @@ function showSlides(n) {
   // console.log(slides);
   // console.log(slides[0]);
   // console.log(slides[slideIndex-1]);
-  slides[slideIndex-1].getElementsByTagName('video')[0].play(); // replay video on click
+  // slides[slideIndex-1].getElementsByTagName('video')[0].play(); // replay video on click
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
