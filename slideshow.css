@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
   }
-  
+  .slideshow {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 60%;
+  }
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
