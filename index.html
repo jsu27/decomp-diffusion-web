@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
   <link rel="stylesheet" href="bootstrap-grid.css">
+  <link rel="stylesheet" href="slideshow.css">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -37,6 +39,8 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
   <script src="load-mathjax.js" async></script>
+  <script src="slideshow.js" defer></script>
+
 </head>
 <body>
 
@@ -206,8 +210,99 @@ Once we train these denoising functions, we use the standard noisy optimization 
 
         <br>
         <p>
-        Below, we illustrate our approach's ability to decompose scenes into both global concepts as well as local concepts. Additionally, we show that discovered concepts generalize well and can compose across different modalities of data. 
+          In the following demo, we illustrate our approach's ability to decompose images into both global concepts and local concepts, as well as its ability to reconstruct the original image by recombining concepts. 
+          Click on an image to view its decomposition and reconstruction.
+
       </p>
+
+
+
+
+      <!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <!-- <img src="materials/slideshow/clevr_row.png" style="width:100%"> -->
+    <video width="100%" playsinline="" autoplay="" preload="" muted="">
+      <source src="materials/slideshow/clevr_row_animation.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <video width="100%" playsinline="" autoplay="" preload="" muted="">
+      <source src="materials/slideshow/celeb_row_animation.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <video width="100%" playsinline="" autoplay="" preload="" muted="">
+      <source src="materials/slideshow/vkitti_row_animation.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <video width="100%" playsinline="" autoplay="" preload="" muted="">
+      <source src="materials/slideshow/tetris_row_animation.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <video width="100%" playsinline="" autoplay="" preload="" muted="">
+      <source src="materials/slideshow/tetris_row_animation.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+  </div> -->
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column column2">
+      <img class="demo cursor" src="materials/slideshow/clevr_048.png" style="width:100%" onclick="currentSlide(1)" alt="CLEVR">
+    </div>
+    <div class="column column2">
+      <img class="demo cursor" src="materials/slideshow/celebahq_103.png" style="width:100%" onclick="currentSlide(2)" alt="CelebA-HQ">
+    </div>
+    <div class="column column2">
+      <img class="demo cursor" src="materials/slideshow/vkitti_300.jpg" style="width:100%" onclick="currentSlide(3)" alt="KITTI">
+    </div>
+    <div class="column column2">
+      <img class="demo cursor" src="materials/slideshow/tetris_6.png" style="width:100%" onclick="currentSlide(4)" alt="Tetris">
+    </div>
+    <div class="column column2">
+      <img class="demo cursor" src="materials/slideshow/anime.jpg" style="width:100%" onclick="currentSlide(5)" alt="Anime">
+    </div>
+    <!-- <div class="column">
+      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div> -->
+  </div>
+</div>
+
+
+<p>
+  Below, we showcase additional examples of decomposition and reconstruction. Additionally, we show that discovered concepts generalize well and can compose across different modalities of data. 
+
+</p>
+
+
+
 
         <!--         
         <center>
