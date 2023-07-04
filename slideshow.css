@@ -139,6 +139,7 @@
   opacity: 0;
   /* transition: .5s ease; */
   background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 .gallery__item:hover .overlay {
   opacity: 1;
@@ -146,9 +147,9 @@
 
 .text {
   color: white;
-  font-size: 12px;
+  font-size: min(1vw, 15px);
   position: absolute;
-  top: 87%;
+  top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -158,9 +159,9 @@
 
 .text2 {
   color: white;
-  font-size: 18px;
+  font-size: min(1.5vw, 18px);
   position: absolute;
-  top: 87%;
+  top: 85%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
