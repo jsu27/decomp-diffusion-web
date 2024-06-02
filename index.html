@@ -160,6 +160,8 @@
     </div>
   </div>
 </section>
+<hr>
+
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -176,6 +178,7 @@
     </div>
   </div>
 </section>
+<hr>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -211,7 +214,7 @@
 
           <br>
         </div>
-
+        <hr>
 
         <h2 class="title is-3">Demo</h2>
         <div class="content has-text-justified">
@@ -604,7 +607,7 @@
         <h2 class="title is-3">Results</h2>
         <div class="content has-text-justified">
           <p>
-            Below, we showcase additional examples of decomposition and reconstruction. Additionally, we show that discovered concepts generalize well and can compose across different modalities of data. 
+            Below, we showcase additional examples of decomposition and reconstruction. We also show that discovered concepts generalize well and can compose across different modalities of data. 
           </p>
         </div>
       </div>
@@ -612,13 +615,13 @@
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Global Factors</h2>
+        <h3 class="title">Global Factors</h3>
         <p>
           Given a set of input images, Decomp Diffusion can capture a set of global scene descriptors such as lighting and background, and recombine them to construct image variations.
         </p>
         <br>
         <div class="content has-text-justified has-text-centered">
-          <h3 class="title ">Decomposition and Recombination</h3>
+          <h4 class="title ">Decomposition and Reconstruction</h4>
           <p>
             Our method can enable global factor decomposition and reconstruction on CelebA-HQ (Left) and Virtual KITTI 2 (Right). Note that we name inferred concepts for easy understanding.
           </p>
@@ -629,7 +632,7 @@
 
 
         <div class="content has-text-justified has-text-centered">
-          <h3 class="title ">Recombination</h3>
+          <h4 class="title ">Recombination</h4>
           <p>
             Our approach can also recombine factors to produce new images. In Falcor3D (Left), we produce variations on a source image by varying a target factor, such as lighting intensity, while preserving its other factors. 
             In CelebA-HQ (Right), we recombine factors from two different inputs to generate novel face combinations.
@@ -661,7 +664,7 @@
         </p>
         <br>
         <div class="content has-text-justified has-text-centered">
-          <h3 class="title ">Decomposition and Recombination</h3>
+          <h4 class="title ">Decomposition and Reconstruction</h4>
           <p>
             Our method can extract individual object components that can be reused for image reconstruction on CLEVR (left) and Tetris (right).            
           </p>
@@ -671,7 +674,7 @@
 
 
         <div class="content has-text-justified has-text-centered">
-          <h3 class="title ">Recombination</h3>
+          <h4 class="title ">Recombination</h4>
           <p>
             We recombine local factors from 2 images to generate composition of inferred object factors. On both CLEVR and Tetris (Left), we recombine inferred object components in the bounding box to generate novel object compositions. On CLEVR (Right), we compose all inferred factors to generalize up to 8 objects, though training images only contain 4 objetcs. 
           </p>
@@ -700,7 +703,7 @@
         </p>
         <br>
         <div class="content has-text-justified has-text-centered">
-          <h3 class="title ">Decomposition and Recombination</h3>
+          <h4 class="title ">Decomposition and Reconstruction</h4>
           <p>
             We show our method can capture a set of global factors that are shared between hybrid datasets such as KITTI and Virtual KITTI 2 scenes (Left), and CelebA-HQ and Anime faces (Right). Inferred concepts are named for better understanding. 
           </p>
@@ -711,7 +714,7 @@
 
 
         <div class="content has-text-justified has-text-centered">
-          <h3 class="title ">Multi-Modal Recombination</h3>
+          <h4 class="title ">Multi-Modal Recombination</h4>
           <p>
             Decomp Diffusion can recombine inferred factors from hybrid datasets to generate novel compositions. On a hybrid KITTI and Virtual KITTI dataset (Top), we recombine factors from a KITTI image and Virtual KITTI image to produce novel road scenes. On a hybrid CelebA-HQ and Anime dataset (Bottom), we combine hair shapes and colors from a CelebA-HQ human face image with face shape and facial features from an Anime face image to generate unique anime-like faces.
           </p>
@@ -720,7 +723,7 @@
               alt="Multi-Modal Recombination."/>
   
         <div class="content has-text-justified has-text-centered">
-          <h3 class="title ">Cross-Dataset Recombination</h3>
+          <h4 class="title ">Cross-Dataset Recombination</h4>
           <p>
             Our method can recombine factors across 2 distinct models trained on different datasets. Below, we combine factors across one model trained on CLEVR and another model trained on CLEVR Toy to generate unseen compositions. 
           </p>
