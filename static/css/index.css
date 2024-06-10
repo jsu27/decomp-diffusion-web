@@ -2,6 +2,13 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.caption {
+  font-size: 14px;
+  color: #777;
+  /* margin-top: 1px; */
+  /* margin-bottom: 10px; */
+text-align: left;
+}
 
 .footer .icon-link {
     font-size: 25px;
