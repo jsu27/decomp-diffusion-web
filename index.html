@@ -633,7 +633,7 @@
             <!-- </div> -->
             <div class="column is-full-width">
               <img src="materials/figures/global_factor_decomposition.png" alt="Global Decomposition." />
-              <p class="caption">On the left, we decompose CelebA-HQ images into inferred components of facial features,
+              <p class="caption"><b>Global factor decomposition on CelebA-HQ and Virtual KITTI.</b> On the left, we decompose CelebA-HQ images into inferred components of facial features,
                 hair color, skin tone, and hair shape. We combine these factors to generate a
                 reconstruction of the original image. On the right, we decompose Virtual KITTI 2 into inferred factors
                 of shadow, lighting, landscape, and objects. </p>
@@ -652,10 +652,10 @@
             </p>
             <div class="column is-full-width">
               <img src="materials/figures/global_factor_recombination.png" alt="Global Recombination." />
-              <p class="caption">On the left, we vary inferred factors of lighting intensity, camera position, and
+              <p class="caption"><b>Global factor recombination on Falcor3D and CelebA-HQ.</b> On the left, we vary inferred factors of lighting intensity, camera position, and
                 lighting
                 position
-                for a particular input. On the right, we recombine an inferred facial features factor from the 1st input and 
+                for a particular Falcor3D input. On the right, we recombine an inferred facial features factor from the 1st input and 
                 hair color, color temperature, and hair shape factors from the 2nd input to generate novel face combinations. </p>
             </div>
           </div>
@@ -688,7 +688,7 @@
             </p>
             <div class="column is-full-width">
               <img src="materials/figures/local_factor_decomposition.png" alt="Local Decomposition." />
-              <p class="caption">On the left, our approach decomposes CLEVR images into individual object components.
+              <p class="caption"><b>Local factor decomposition on CLEVR and Tetris.</b> On the left, our approach decomposes CLEVR images into individual object components.
                 Similarly, on
                 the right, our method decomposes Tetris images into individual Tetris blocks.</p>
             </div>
@@ -706,7 +706,7 @@
            -->
             <div class="column is-full-width">
               <img src="materials/figures/local_factor_recombination.png" alt="Local Recombination." />
-              <p class="caption">On CLEVR and Tetris (Left, Middle), we combine object components from each of 2 input images, labeled within the
+              <p class="caption"><b>Local factor recombination on CLEVR and Tetris.</b> On CLEVR and Tetris (Left, Middle), we combine object components from each of 2 input images, labeled within the
                 bounding
                 boxes, to
                 generate compositions that contain all desired objects. On CLEVR (Right), we compose all 4 inferred object factors from each of 2 inputs to
@@ -743,7 +743,7 @@
             </p>
             <div class="column is-full-width">
               <img src="materials/figures/multi_modal_decomposition.png" alt="Multi-Modal Decomposition." />
-              <p class="caption">On the left, we apply our method on a dataset of both KITTI and Virtual KITTI images to
+              <p class="caption"><b>Multi-modal decomposition on road scenes and faces.</b> On the left, we apply our method on a dataset of both KITTI and Virtual KITTI images to
                 extract inferred factors of background, background texture, objects, and foreground. On the right, our method learns to decompose 
                 a joint dataset of photorealistic CelebA-HQ faces and Anime faces into factors 
                 of face shape, head shape, color temperature, and facial details.</p>
@@ -762,7 +762,7 @@
 
             <div class="column is-full-width">
               <img src="materials/figures/multi_modal_recombination.png" alt="Multi-Modal Recombination." />
-              <p class="caption">On the top, we recombine inferred background and background lighting factors from the
+              <p class="caption"><b>Multi-modal recombination on road scenes and faces.</b> On top, we recombine inferred background and background lighting factors from the
                 1st KITTI input,
                 as well as foreground and shadow factors from the 2nd Virtual KITTI input, to generate a novel
                 combination.
@@ -780,7 +780,7 @@
             </p>
           </div>
           <img src="materials/figures/cross_dataset_recombination.png" alt="Cross-Dataset Recombination." />
-          <p class="caption">We combine 2 object factors from one model trained on CLEVR and 2 object factors from a different model trained on CLEVR Toy
+          <p class="caption"><b>Cross-dataset recombination on CLEVR and CLEVR Toy.</b> We combine 2 object factors from one model trained on CLEVR and 2 object factors from a different model trained on CLEVR Toy
             to generate novel compositions containing both geometric objects and toy objects.</p>
         </div>
       </div>
