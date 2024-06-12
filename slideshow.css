@@ -197,6 +197,20 @@
   grid-row: 3 / span 1;
 }
 
+/* If the screen size is at least this wide, set font size */
+@media screen and (min-width: 751px) {
+  .gallery__text--1, .gallery__text--2, .gallery__text--3 {
+    font-size: 16px;
+  }
+}
+
+/* If the screen size is at most this size, set font size */
+@media screen and (max-width: 750px) {
+  .gallery__text--1, .gallery__text--2, .gallery__text--3 {
+    font-size: 1.5vw;
+  }
+}
+
 .gallery__item--1 {
   grid-column: 1 / span 2; 
   grid-row: 1 / span 2;
