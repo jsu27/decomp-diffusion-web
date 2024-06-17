@@ -74,12 +74,12 @@
   background-color: #222;
   padding: 2px 16px;
   color: white;
-  margin: 0 min(5px, 0.5vw) 0 min(5px, 0.5vw);
-  font-size: 18px;
+  margin: 0 min(3px, 0.3vw) 0 min(3px, 0.3vw);
+  font-size: 16px;
 }
 
 .row {
-  margin: 0 min(5px, 0.5vw) 0 min(5px, 0.5vw);
+  margin: 0 min(3px, 0.3vw) 0 min(3px, 0.3vw);
 }
 .row:after {
   content: "";
@@ -135,7 +135,7 @@
 }
 .gallery__item {
   aspect-ratio: 1;
-  margin: min(5px, 0.5vw);
+  margin: min(5px, 0.3vw);
   position: relative;
 }
 
@@ -160,7 +160,7 @@
 
 .text {
   color: white;
-  font-size: min(1vw, 15px);
+  font-size: min(0.9vw, 15px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -198,16 +198,23 @@
 }
 
 /* If the screen size is at least this wide, set font size */
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 1001px) {
   .gallery__text--1, .gallery__text--2, .gallery__text--3 {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 /* If the screen size is at most this size, set font size */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   .gallery__text--1, .gallery__text--2, .gallery__text--3 {
-    font-size: 1.5vw;
+    font-size: 11px;
+  }
+}
+
+/* If the screen size is at most this size, set font size */
+@media screen and (max-width: 800px) {
+  .gallery__text--1, .gallery__text--2, .gallery__text--3 {
+    font-size: 1.1vw;
   }
 }
 
